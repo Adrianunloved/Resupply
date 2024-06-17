@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-export const useOrigin= () =>{
+export const useOrigin = () => {
     const[mounted,setMounted]=useState(false);
     const origin= typeof window !== "undefined" && window.location.origin?window.location.origin: '';
  useEffect(() =>{
@@ -11,4 +11,4 @@ export const useOrigin= () =>{
  }
 
  return origin
-}
+};
